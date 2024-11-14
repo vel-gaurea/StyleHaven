@@ -186,7 +186,7 @@ const verifyRazorpay = async (req, res) => {
 const allOrders = async (req, res) => {
     try {
         const orders = await orderModel.find({});
-        console.log("Fetched Orders:", orders);  // Debugging
+        // console.log("Fetched Orders:", orders);  
         res.json({ success: true, orders });
     } catch (error) {
         console.log("Error in allOrders:", error);
